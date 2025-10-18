@@ -13,7 +13,7 @@ services:
       - springboot-mysql-net
 
   backend:
-    image: lasya06tech/dockerlab13-practice:latest
+    image: lasya06tech/dockerlab13backend-practice:latest
     container_name: springboot
     ports:
       - "2099:2055"
@@ -24,7 +24,7 @@ services:
       - springboot-mysql-net
 
   frontend:
-    image: lasya06tech/dockerlab13-practice:latest
+    image: lasya06tech/dockerlab13frontend-practice:latest
     container_name: react
     ports:
       - "3000:80"
